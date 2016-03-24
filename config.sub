@@ -1214,6 +1214,10 @@ case $basic_machine in
 		basic_machine=vax-dec
 		os=-sysv
 		;;
+	vc4)
+		basic_machine=vc4
+		os=-elf
+		;;
 	vms)
 		basic_machine=vax-dec
 		os=-vms

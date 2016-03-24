@@ -108,6 +108,7 @@ case ${cpu} in
   tilegx*be)		cpu_type=tilegx endian=big ;;
   tilegx*)		cpu_type=tilegx endian=little ;;
   v850*)		cpu_type=v850 ;;
+  vc4*)			cpu_type=vc4 endian=little ;;
   visium)		cpu_type=visium endian=big ;;
   x86_64*)		cpu_type=i386 arch=x86_64;;
   xgate)		cpu_type=xgate ;;
@@ -459,6 +460,8 @@ case ${generic_target} in
 
   vax-*-netbsdelf*)			fmt=elf em=nbsd ;;
   vax-*-linux-*)			fmt=elf em=linux ;;
+
+  vc4-*-elf)				fmt=elf ;;
 
   visium-*-elf)				fmt=elf ;;
 

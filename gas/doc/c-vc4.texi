@@ -1,0 +1,66 @@
+@c Copyright (C) 2014-2016 Free Software Foundation, Inc.
+@c This is part of the GAS manual.
+@c For copying conditions, see the file as.texinfo.
+@c man end
+
+@ifset GENERIC
+@page
+@node VC4-Dependent
+@chapter VC4 Dependent Features
+@end ifset
+
+@ifclear GENERIC
+@node Machine Dependencies
+@chapter VC4 Dependent Features
+@end ifclear
+
+@cindex VC4 support
+@menu
+* VC4 Options::              Options
+* VC4 Syntax::               Syntax
+* VC4 Opcodes::              Opcodes
+@end menu
+
+@node VC4 Options
+@section Options
+@cindex VC4 options
+@cindex options for VC4
+
+The VC4 assembler implements no machine-specific option:
+
+@node VC4 Syntax
+@section Syntax
+
+@menu
+* VC4 Characters::           Special Characters
+* VC4 Registers::            Register Names
+@end menu
+
+@node VC4 Characters
+@subsection Special Characters
+
+@cindex line comment character, VC4
+@cindex VC4 line comment character
+Line comments are introduced either by the @samp{!} character or by the
+@samp{;} character appearing anywhere on a line.
+
+A hash character (@samp{#}) as the first character on a line also
+marks the start of a line comment, but in this case it could also be a
+logical line number directive (@pxref{Comments}) or a preprocessor
+control command (@pxref{Preprocessing}).
+
+@cindex line separator, VC4
+@cindex statement separator, VC4
+@cindex VC4 line separator
+The VC4 assembler does not currently support a line separator character.
+
+@node VC4 Registers
+@subsection Register Names
+@cindex VC4 registers
+@cindex register names, VC4
+Registers can be specified either by using their canonical mnemonic names
+or by using their alias if they have one, for example @samp{sp}.
+
+@node VC4 Opcodes
+@section Opcodes
+All the standard opcodes of the architecture are implemented.

@@ -193,6 +193,7 @@ TARGET_CPU_CFILES = \
 	config/tc-tilepro.c \
 	config/tc-v850.c \
 	config/tc-vax.c \
+	config/tc-vc4.c \
 	config/tc-visium.c \
 	config/tc-xstormy16.c \
 	config/tc-xc16x.c \
@@ -266,6 +267,7 @@ TARGET_CPU_HFILES = \
 	config/tc-tilepro.h \
 	config/tc-v850.h \
 	config/tc-vax.h \
+	config/tc-vc4.h \
 	config/tc-visium.h \
 	config/tc-xstormy16.h \
 	config/tc-xc16x.h \

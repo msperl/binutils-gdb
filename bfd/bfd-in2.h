@@ -2323,6 +2323,9 @@ enum bfd_architecture
 #define bfd_mach_nios2         0
 #define bfd_mach_nios2r1       1
 #define bfd_mach_nios2r2       2
+  bfd_arch_vc4,        /* VideoCore 4 */
+#define bfd_mach_vc4           1
+#define bfd_mach_vc4qpu        2
   bfd_arch_visium,     /* Visium */
 #define bfd_mach_visium        1
   bfd_arch_last
